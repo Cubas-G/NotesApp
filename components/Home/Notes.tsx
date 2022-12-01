@@ -8,7 +8,7 @@ export default function Notes() {
 
         <View style={styles.container1}>
             <ScrollView horizontal={true}>
-                
+                ñ
                 {/* PRIMERA FORMA */}
                 <View>
                     <View style={styles.Firsth}>
