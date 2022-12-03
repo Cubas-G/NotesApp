@@ -52,6 +52,7 @@ const MyTabBar = ({ state, descriptors, navigation }: any) => {
             testID={options.tabBarTestID}
             accessibilityRole="button"
           >
+
             {/*  Primer icono de Scroll */}
             {index === 0 && (
               <View style={styles.icon}>
@@ -109,14 +110,31 @@ const MyTabBar = ({ state, descriptors, navigation }: any) => {
 };
 
 const styles = StyleSheet.create({
-  icon: {},
+  icon: {
+
+  },
+
+  icones: {
+
+  },
+
   bottomBar: {
     height: 100,
-    backgroundColor: "#154c79",
+    backgroundColor: "#4430A6",
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-around",
   },
+
+  // Icono central:{
+  //   abajo:40,
+  //   ancho: 50,
+  //   altura: 50,
+  //   borderRadius: 30,
+  //   backgroundColor:"#E13F3C",
+  //   justifyContent:"center",
+  //   alignItems:"center",
+  // },
 
 });
 

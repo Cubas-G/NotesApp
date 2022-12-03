@@ -1,21 +1,18 @@
-import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 
 
 export default function Notes() {
     return (
-        <ScrollView horizontal={true}>
+
+        // VISTA DE NOTAS DE ESTUDIANTES
+
+        <ScrollView>
             <View style={styles.container1}>
-
                 {/* PRIMERA FORMA */}
-
                 <View style={styles.Firsth}>
-                    <View style={styles.Second}>
-                        <Text style={styles.Text1}>NOTES OF THE DAY</Text>
-                    </View>
-
                     <View>
                         <Image
-                            style={{ width: 310, height: 200, margin: 5 }}
+                           style={styles.img}
                             source={{ uri: "https://live.staticflickr.com/4176/34494768495_ffac0145af_z.jpg" }}
                         />
                     </View>
@@ -30,12 +27,9 @@ export default function Notes() {
 
                 {/* SEGUNDA FORMA */}
                 <View style={styles.Firsth}>
-                    <View style={styles.Second}>
-                        <Text style={styles.Text1}>NOTES OF THE WEEK</Text>
-                    </View>
                     <View>
                         <Image
-                            style={{ width: 310, height: 200, margin: 5 }}
+                            style={styles.img}
                             source={{ uri: "https://th.bing.com/th/id/R.2e7fc488bea158c815302fd878152648?rik=f7WDSIovQHPT2A&pid=ImgRaw&r=0" }}
                         />
                     </View>
@@ -45,14 +39,13 @@ export default function Notes() {
                         <Text style={styles.Text2}>Second year of biology</Text>
                     </View>
                 </View>
+
+
                 {/* TERCERA FORMA */}
                 <View style={styles.Firsth}>
-                    <View style={styles.Second}>
-                        <Text style={styles.Text1}>NOTES MONTH</Text>
-                    </View>
                     <View>
                         <Image
-                            style={{ width: 310, height: 200, margin: 5 }}
+                            style={styles.img}
                             source={{ uri: "https://th.bing.com/th/id/R.8435ec947af5fc4a7c42d0308aec06af?rik=5b1HHJaM8ftGvw&pid=ImgRaw&r=0&sres=1&sresct=1" }}
                         />
                     </View>
@@ -62,48 +55,42 @@ export default function Notes() {
                         <Text style={styles.Text2}>Intercultural Nursing Fourth year</Text>
                     </View>
                 </View>
-            </View >
+            </View>
+
         </ScrollView>
 
     );
 
 }
-
 const styles = StyleSheet.create({
 
+    img: {
+        height: 80,
+        width: 80,
+        borderRadius: 5,
+    },
+
     container1: {
-        flexDirection: 'row',
-        marginTop: -150,
+        flex: 1,
+        flexDirection: 'column',	
     },
 
     Firsth: {
-        marginTop: 150,
-        height: 320,
+        marginTop: 20,
+        height: 80,
         width: 320,
-        backgroundColor: '#22432D',
-        borderRadius: 20,
         margin: 2,
     },
 
-    Second: {
-        height: 50,
-        width: 320,
-        backgroundColor: '#2A2D2E',
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-        justifyContent: 'center',
-        alignItems: 'center',
-
-    },
-
+   
     Third: {
-        height: 70,
-        width: 320,
-        backgroundColor: '#2A2D2E',
-        borderBottomLeftRadius: 20,
-        borderBottomRightRadius: 20,
+        marginTop: -80,
+        marginLeft: 80,
+        height: 80,
+        width: 235,
+        borderWidth: 1,
     },
-
+    
     Text1: {
         color: '#FFFFFF',
         margin: 10,
@@ -113,8 +100,10 @@ const styles = StyleSheet.create({
     },
 
     Text2: {
-        color: '#FFFFFF',
+        marginTop: 5,
+        color: '#000',
         marginLeft: 10,
         fontSize: 15,
     },
+
 })
