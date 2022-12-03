@@ -14,25 +14,30 @@ export default function UserEdit() {
                         </Text>
                     </View>
 
+                    <View style={styles.Viewimput}>
+                        
                     <TextInput
                         placeholder='Ingrse su nombre'
                         style={styles.imput}
                     />
 
-<TextInput
+                    <TextInput
                         placeholder='Ingrse su nombre'
                         style={styles.imput}
                     />
 
-<TextInput
+                    <TextInput
                         placeholder='Ingrse su nombre'
                         style={styles.imput}
                     />
 
-<TextInput
+                    <TextInput
                         placeholder='Ingrse su nombre'
                         style={styles.imput}
                     />
+
+                    </View>
+
 
                 </View>
             </ScrollView>
@@ -42,8 +47,15 @@ export default function UserEdit() {
 
 const styles = StyleSheet.create({
 
+    Viewimput: {
+        justifyContent: 'center',
+        backgroundColor: '#008000',
+        alignItems: 'center',
+
+    },
+
     imput: {
-        width: 450,
+        width: 300,
         marginTop: 20,
         height: 50,
         alignItems: 'center',
