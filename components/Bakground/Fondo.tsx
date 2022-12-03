@@ -5,6 +5,7 @@ export default function Fondo() {
     return (
         <View style={styles.styleone}>
             <ScrollView>
+                Hola mundo
             </ScrollView>
         </View>
     );

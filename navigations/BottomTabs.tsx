@@ -11,7 +11,7 @@ import Edit from '../screens/Edit';
 const Tab = createBottomTabNavigator();
 
 const BottomTabs = () => {
-  return (
+  return (   
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
@@ -126,16 +126,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
 
-  // Icono central:{
-  //   abajo:40,
-  //   ancho: 50,
-  //   altura: 50,
-  //   borderRadius: 30,
-  //   backgroundColor:"#E13F3C",
-  //   justifyContent:"center",
-  //   alignItems:"center",
-  // },
-
+ 
 });
 
 export default BottomTabs;
