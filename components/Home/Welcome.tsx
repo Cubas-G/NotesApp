@@ -7,27 +7,28 @@ import NotesEstudent from './NotesEstudent';
 
 export default function background() {
     return (
-        <View style={styles.styleone}>
-            < TouchableOpacity>
-                <View style={styles.carrer}>
-                    <Text style={styles.Notescarrer}>NOTES BY CARRER</Text>
-                </View>
-            </TouchableOpacity>
-            <View>
+        <ScrollView>
+            <View style={styles.styleone}>
+                < TouchableOpacity>
+                    <View style={styles.carrer}>
+                        <Text style={styles.Notescarrer}>NOTES BY CARRER</Text>
+                    </View>
+                </TouchableOpacity>
                 <View>
-                    <Notes />
+                    <View>
+                        <Notes />
+                    </View>
+
+                    <View>
+                        <Reminders />
+                    </View>
+                    <View>
+                        <NotesEstudent />
+                    </View>
                 </View>
 
-                <View>
-                    <Reminders />
-                </View>
-
-                <View>
-                    <NotesEstudent />
-                </View>
             </View>
-
-        </View>
+        </ScrollView>
     );
 
 }
@@ -43,8 +44,6 @@ const styles = StyleSheet.create({
         height: '15%',
         width: '100%',
     },
-  
-
     carrer: {
         marginTop: 150,
         marginBottom: 20,

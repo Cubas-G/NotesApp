@@ -44,18 +44,18 @@ export default function UserEdit() {
                             </TouchableOpacity><br />
 
                             <View style={styles.textAreaContainer} >
-                                <TextInput
-                                    style={styles.textArea}
-                                    underlineColorAndroid="transparent"
-                                    placeholder="Type something"
-                                    placeholderTextColor='#487E02'
-                                    multiline={true}
-                                />
-                            </View>
+                            <TextInput
+                                style={styles.textArea}
+                                underlineColorAndroid="transparent"
+                                placeholder="Type something"
+                                placeholderTextColor='#487E02'
+                                multiline={true}
+                            />
+                        </View>
 
                         </View>
 
-
+                        
 
                     </View>
                 </View>

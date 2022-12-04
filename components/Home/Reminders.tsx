@@ -12,7 +12,7 @@ export default function Notes() {
                 <View style={styles.Firsth}>
                     <View>
                         <Image
-                           style={styles.img}
+                            style={styles.img}
                             source={{ uri: "https://live.staticflickr.com/4176/34494768495_ffac0145af_z.jpg" }}
                         />
                     </View>
@@ -55,8 +55,37 @@ export default function Notes() {
                         <Text style={styles.Text2}>Intercultural Nursing Fourth year</Text>
                     </View>
                 </View>
-            </View>
 
+                {/* CUARTA FORMA */}
+                <View style={styles.Firsth}>
+                    <View>
+                        <Image
+                            style={styles.img}
+                            source={{ uri: "https://th.bing.com/th/id/R.8435ec947af5fc4a7c42d0308aec06af?rik=5b1HHJaM8ftGvw&pid=ImgRaw&r=0&sres=1&sresct=1" }}
+                        />
+                    </View>
+                    <View style={styles.Third}>
+                        <Text style={styles.Text2}>Date: 08/11/22</Text>
+                        <Text style={styles.Text2}>Care for patients in the hospital</Text>
+                        <Text style={styles.Text2}>Intercultural Nursing Fourth year</Text>
+                    </View>
+                </View>
+
+                {/* QUINTA FORMA */}
+                <View style={styles.Firsth}>
+                    <View>
+                        <Image
+                            style={styles.img}
+                            source={{ uri: "https://th.bing.com/th/id/R.8435ec947af5fc4a7c42d0308aec06af?rik=5b1HHJaM8ftGvw&pid=ImgRaw&r=0&sres=1&sresct=1" }}
+                        />
+                    </View>
+                    <View style={styles.Third}>
+                        <Text style={styles.Text2}>Date: 08/11/22</Text>
+                        <Text style={styles.Text2}>Care for patients in the hospital</Text>
+                        <Text style={styles.Text2}>Intercultural Nursing Fourth year</Text>
+                    </View>
+                </View>
+            </View>
         </ScrollView>
 
     );
@@ -68,11 +97,12 @@ const styles = StyleSheet.create({
         height: 80,
         width: 80,
         borderRadius: 5,
+        marginLeft: 50,
     },
 
     container1: {
         flex: 1,
-        flexDirection: 'column',	
+        flexDirection: 'column',
     },
 
     Firsth: {
@@ -82,15 +112,15 @@ const styles = StyleSheet.create({
         margin: 2,
     },
 
-   
+
     Third: {
         marginTop: -80,
-        marginLeft: 80,
+        marginLeft: 130,
         height: 80,
         width: 235,
         borderWidth: 1,
     },
-    
+
     Text1: {
         color: '#FFFFFF',
         margin: 10,
