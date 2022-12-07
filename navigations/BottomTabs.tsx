@@ -119,8 +119,8 @@ const styles = StyleSheet.create({
   },
 
   bottomBar: {
-    height: 100,
-    backgroundColor: "#4430A6",
+    height: 80,
+    backgroundColor: "#24589E",
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-around",

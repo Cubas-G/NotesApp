@@ -39,28 +39,29 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     styleone: {
-        backgroundColor: '#24234C',
+        backgroundColor: '#24589E',
         fontSize: 20,
-        height: '15%',
+        height: 80,
         width: '100%',
     },
     carrer: {
-        marginTop: 150,
+        marginTop: 120,
         marginBottom: 20,
         marginLeft: 20,
         marginRight: -330,
         height: 70,
         width: 320,
-        backgroundColor: '#d3d3d3',
+        backgroundColor: '#24589E',
         borderRadius: 10,
-        borderWidth: 1,
+    
+        boxShadow: '2px 2px 2px #91BFF5',
 
     },
 
     Notescarrer: {
         marginTop: 10,
         fontSize: 30,
-        color: '#2A2D',
+        color: '#ffff',
         margin: 20,
 
     },

@@ -3,14 +3,16 @@ import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'rea
 
 export default function Notes() {
     return (
-        <ScrollView horizontal={true}>
+        <ScrollView horizontal={true}
+        showsHorizontalScrollIndicator = {false}
+        >
             <View style={styles.container1}>
 
                 {/* PRIMERA FORMA */}
 
                 <View style={styles.Firsth}>
                     <View style={styles.Second}>
-                        <Text style={styles.Text1}>NOTES OF THE DAY</Text>
+                        <Text style={styles.Text1}>Notes of the day</Text>
                     </View>
 
                     <View>
@@ -31,7 +33,7 @@ export default function Notes() {
                 {/* SEGUNDA FORMA */}
                 <View style={styles.Firsth}>
                     <View style={styles.Second}>
-                        <Text style={styles.Text1}>NOTES OF THE WEEK</Text>
+                        <Text style={styles.Text1}>Notes of the week</Text>
                     </View>
                     <View>
                         <Image
@@ -48,7 +50,24 @@ export default function Notes() {
                 {/* TERCERA FORMA */}
                 <View style={styles.Firsth}>
                     <View style={styles.Second}>
-                        <Text style={styles.Text1}>NOTES MONTH</Text>
+                        <Text style={styles.Text1}>Notes of the month</Text>
+                    </View>
+                    <View>
+                        <Image
+                            style={{ width: 310, height: 200, margin: 5 }}
+                            source={{ uri: "https://th.bing.com/th/id/R.8435ec947af5fc4a7c42d0308aec06af?rik=5b1HHJaM8ftGvw&pid=ImgRaw&r=0&sres=1&sresct=1" }}
+                        />
+                    </View>
+                    <View style={styles.Third}>
+                        <Text style={styles.Text2}>Date: 08/11/22</Text>
+                        <Text style={styles.Text2}>Care for patients in the hospital</Text>
+                        <Text style={styles.Text2}>Intercultural Nursing Fourth year</Text>
+                    </View>
+                </View>
+
+                <View style={styles.Firsth}>
+                    <View style={styles.Second}>
+                        <Text style={styles.Text1}>Notes of the year</Text>
                     </View>
                     <View>
                         <Image
@@ -80,15 +99,15 @@ const styles = StyleSheet.create({
         marginTop: 150,
         height: 320,
         width: 320,
-        backgroundColor: '#22432D',
+        backgroundColor: '#ffff',
         borderRadius: 20,
         margin: 2,
+        boxShadow: '2px 2px 2px #91BFF5',
     },
 
     Second: {
         height: 50,
         width: 320,
-        backgroundColor: '#2A2D2E',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         justifyContent: 'center',
@@ -99,21 +118,21 @@ const styles = StyleSheet.create({
     Third: {
         height: 70,
         width: 320,
-        backgroundColor: '#2A2D2E',
+        backgroundColor: '#ffff',
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
+        boxShadow: '2px 2px 2px #91BFF5',
     },
 
     Text1: {
-        color: '#FFFFFF',
+        color: '#000',
         margin: 10,
         fontSize: 25,
-        fontWeight: 'bold',
-        fontStyle: 'italic',
+        fontFamily: 'Copperplate',
     },
 
     Text2: {
-        color: '#FFFFFF',
+        color: '#000',
         marginLeft: 10,
         fontSize: 15,
     },

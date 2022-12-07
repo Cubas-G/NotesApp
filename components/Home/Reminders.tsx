@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import { shadow } from 'react-native-paper';
 
 
 export default function Notes() {
@@ -6,7 +7,8 @@ export default function Notes() {
 
         // VISTA DE NOTAS DE ESTUDIANTES
 
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator  = {false}>
+            
             <View style={styles.container1}>
                 {/* PRIMERA FORMA */}
                 <View style={styles.Firsth}>
@@ -106,7 +108,7 @@ const styles = StyleSheet.create({
     },
 
     Firsth: {
-        marginTop: 20,
+        marginTop: 30,
         height: 80,
         width: 320,
         margin: 2,
@@ -118,7 +120,9 @@ const styles = StyleSheet.create({
         marginLeft: 130,
         height: 80,
         width: 235,
-        borderWidth: 1,
+        borderRadius: 10,
+        boxShadow: '2px 2px 2px #91BFF5',
+         
     },
 
     Text1: {

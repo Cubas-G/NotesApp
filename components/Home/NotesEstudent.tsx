@@ -15,7 +15,7 @@ export default function NotesEstudent (){
 const styles = StyleSheet.create({
     studenttext: {
         fontSize: 15,
-        color: '#001406',
+        color: '#ffff',
 
     },
 
