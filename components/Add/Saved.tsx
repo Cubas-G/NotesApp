@@ -1,5 +1,6 @@
-import { StyleSheet, ScrollView, Text, View, TextInput, TouchableOpacity, Systrace, } from 'react-native';
-import { grey200 } from 'react-native-paper/lib/typescript/styles/colors';
+import { StyleSheet, ScrollView, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import "react-native-gesture-handler";
+import SaveA from './SaveA';
 
 
 
@@ -12,13 +13,10 @@ export default function UserEdit() {
             <View style={styles.styleone}>
                 <View style={styles.styletwo}>
 
-
                     <View style={styles.container}>
                         <Text style={styles.text1}>
-                            COMPLETE THE FIELDS
+                            Add student
                         </Text>
-
-
                         <TouchableOpacity>
                             <TextInput
                                 placeholder='Name'
@@ -66,6 +64,7 @@ export default function UserEdit() {
                             </View>
                         </TouchableOpacity>
 
+                        {/* <SaveA/> */}
                     </View>
                 </View>
             </View>
@@ -101,8 +100,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#24589E',
         height: 100,
         width: '100%',
-        marginBottom: 150,
-
     },
 
     styletwo: {
@@ -169,10 +166,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-
-
-
-
 });
 
 

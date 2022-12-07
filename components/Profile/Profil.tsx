@@ -3,6 +3,9 @@ import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 export default function Profil() {
     return (
 
+
+        
+
         <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
 
@@ -135,7 +138,7 @@ const styles = StyleSheet.create({
 
     styletwo: {
         marginTop: 130,
-        height: 80,
+        height: 60,
         width: 320,
         justifyContent: 'center',
         alignItems: 'center',
