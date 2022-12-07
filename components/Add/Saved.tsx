@@ -1,88 +1,133 @@
-import { StyleSheet, ScrollView, Text, View, TextInput, TouchableOpacity, } from 'react-native';
+import { StyleSheet, ScrollView, Text, View, TextInput, TouchableOpacity, Systrace, } from 'react-native';
+import { grey200 } from 'react-native-paper/lib/typescript/styles/colors';
 
 
 
 
 export default function UserEdit() {
     return (
-        <View style={styles.container}>
-            <ScrollView>
-                <View style={styles.container0}>
-                    <View style={styles.View1} >
+
+        <ScrollView>
+
+            <View style={styles.styleone}>
+                <View style={styles.styletwo}>
+
+
+                    <View style={styles.container}>
                         <Text style={styles.text1}>
                             COMPLETE THE FIELDS
                         </Text>
-                        <View style={styles.Viewimput}>
 
-                            <TouchableOpacity>
-                                <TextInput
-                                    placeholder='Name'
-                                    placeholderTextColor="#9a73ef"
-                                    style={styles.imput}
-                                />
-                            </TouchableOpacity>
-                            <TouchableOpacity>
-                                <TextInput
-                                    placeholder='Surname'
-                                    style={styles.imput}
-                                />
-                            </TouchableOpacity>
 
-                            <TouchableOpacity>
-                                <TextInput
-                                    placeholder='Career'
-                                    style={styles.imput}
-                                />
-                            </TouchableOpacity>
+                        <TouchableOpacity>
+                            <TextInput
+                                placeholder='Name'
+                                placeholderTextColor="#BFBDBC"
+                                style={styles.imput}
+                            />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <TextInput
+                                placeholder='Surname'
+                                placeholderTextColor="#BFBDBC"
+                                style={styles.imput}
+                            />
+                        </TouchableOpacity>
 
-                            <TouchableOpacity>
+                        <TouchableOpacity>
+                            <TextInput
+                                placeholder='Career'
+                                placeholderTextColor="#BFBDBC"
+                                style={styles.imput}
+                            />
+                        </TouchableOpacity>
 
-                                <TextInput
-                                    placeholder='Year academic'
-                                    style={styles.imput}
-                                />
-                            </TouchableOpacity><br />
+                        <TouchableOpacity>
 
-                            <View style={styles.textAreaContainer} >
+                            <TextInput
+                                placeholder='Year academic'
+                                placeholderTextColor="#BFBDBC"
+                                style={styles.imput}
+                            />
+                        </TouchableOpacity><br />
+
+                        <View style={styles.textAreaContainer} >
                             <TextInput
                                 style={styles.textArea}
                                 underlineColorAndroid="transparent"
                                 placeholder="Type something"
-                                placeholderTextColor='#487E02'
+                                placeholderTextColor="#BFBDBC"
                                 multiline={true}
                             />
                         </View>
-
-                        </View>
-
-                        
+                        <TouchableOpacity>
+                            <View style={styles.save} >
+                                <Text style={styles.textsave}>SAVE</Text>
+                            </View>
+                        </TouchableOpacity>
 
                     </View>
                 </View>
-            </ScrollView>
-        </View>
+            </View>
+        </ScrollView>
     );
 }
 
 const styles = StyleSheet.create({
 
+    save: {
+        backgroundColor: '#24589E',
+        marginLeft: 60,
+        marginTop: 20,
+        height: 70,
+        width: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 5,
+
+    },
+
+    textsave: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 30,
+        fontFamily: 'arial',
+        color: '#FFFFFF',
+
+    },
+
+
+    styleone: {
+        backgroundColor: '#24589E',
+        height: 100,
+        width: '100%',
+        marginBottom: 150,
+
+    },
+
+    styletwo: {
+        marginTop: 150,
+        height: '100%',
+        width: '100%',
+
+    },
+
     textAreaContainer: {
         borderColor: '#000',
         borderWidth: 1,
-        width: '85%',
+        width: 300,
         height: 50,
+        marginLeft: 20,
     },
     textArea: {
         height: 100,
-    },
+        borderRadius: 5,
 
-    container0: {
     },
 
     Viewimput: {
         marginTop: 10,
         backgroundColor: '#ffff',
-        justifyContent: 'center',
         alignItems: 'center',
         width: 350,
         height: 400,
@@ -92,38 +137,27 @@ const styles = StyleSheet.create({
     },
 
     imput: {
-        backgroundColor: '#F1EEEF',
+        fontFamily: 'arial',
+        marginLeft: 20,
         width: 300,
         marginTop: 20,
         height: 50,
         alignItems: 'center',
         justifyContent: 'center',
-        borderWidth: 1,
         paddingStart: 5,
-        borderRadius: 5,
+        boxShadow: '0px 2px 0px 0px #91BFF5',
     },
 
     container: {
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    View1: {
-        width: 400,
-        marginTop: 100,
-        height: 500,
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderWidth: 1,
-        backgroundColor: '#32A6DE',
-        borderRadius: 10,
-
+        margin: 20,
     },
 
     text1: {
-        fontSize: 20,
-        color: '#000',
+        fontSize: 30,
+        color: '#006CBE',
         justifyContent: 'center',
         alignItems: 'center',
+        marginLeft: 30,
 
     },
 

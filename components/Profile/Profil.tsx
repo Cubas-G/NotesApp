@@ -130,17 +130,21 @@ const styles = StyleSheet.create({
         backgroundColor: '#24589E',
         height: 100,
         width: '100%',
+
     },
 
     styletwo: {
         marginTop: 130,
-        backgroundColor: '#245E',
         height: 80,
         width: 320,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
         marginLeft: 50,
+        marginBottom: 20,
+        marginRight: -330,
+        backgroundColor: '#24589E',
+        boxShadow: '2px 2px 2px #91BFF5',
     },
 
 
