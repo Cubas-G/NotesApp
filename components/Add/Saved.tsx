@@ -1,9 +1,6 @@
 import { StyleSheet, ScrollView, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import "react-native-gesture-handler";
-import SaveA from './SaveA';
-
-
-
+import Listcareer from './Listcareer';
 
 export default function UserEdit() {
     return (
@@ -31,15 +28,7 @@ export default function UserEdit() {
                                 style={styles.imput}
                             />
                         </TouchableOpacity>
-
-                        <TouchableOpacity>
-                            <TextInput
-                                placeholder='Career'
-                                placeholderTextColor="#BFBDBC"
-                                style={styles.imput}
-                            />
-                        </TouchableOpacity>
-
+                        <Listcareer />
                         <TouchableOpacity>
 
                             <TextInput

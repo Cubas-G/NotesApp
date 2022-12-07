@@ -1,6 +1,4 @@
 import { StyleSheet, ScrollView, Text, View, TextInput, TouchableOpacity, Systrace, } from 'react-native';
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import { NavigationContainer } from "@react-navigation/native";
 import "react-native-gesture-handler";
 
 export default function UserEdit() {
